@@ -13,3 +13,6 @@
 
 ## Art Direction
 * Whimsical, adventurous, colorful, bright and cheery, fast-paced, humerous, scenic, romantic, fun
+
+## Visual Design
+* Collage from art direction
