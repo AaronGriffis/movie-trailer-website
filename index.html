@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Web 2 Starter</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/mediaelementplayer.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>The Grand Budapest Hotel</h1>
     
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Fg5iWmQjwk" frameborder="0" allowfullscreen></iframe>
+    <!--  Trailer for Movie  -->
+    <video>
+        <source src="video/trailer.mp4">
+        <source src="video/trailer.webm">
+    </video>
     
-    <!--  jQuery Library  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--  Plugins  -->
     <script src="js/plugin.js"></script>
-    <!--  My Scripts  -->
+    <script src="js/mediaelementplayer.js"></script>
     <script src="js/scripts.js"></script>
     
 </body>

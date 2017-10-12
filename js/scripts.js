@@ -1,2 +1,4 @@
 // My Awesome Scripts
-console.log('All is good');
+
+//Media Element Player
+$('video').mediaelementplayer();
