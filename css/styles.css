@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Arvo|Oswald");
 /* line 12, /Volumes/agriffis1/p1-movie-trailer/css/_normalize.css */
 html {
   line-height: 1.15;
@@ -1094,8 +1095,22 @@ Reference: http://blog.rrwd.nl/2015/04/04/the-screen-reader-text-class-why-and-h
   display: block; }
 
 /* End: Error */
-/* line 6, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+/* line 7, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
 body {
   background: antiquewhite; }
+
+/* line 11, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+h1 {
+  color: #cd7e9e;
+  font-family: 'Arvo'; }
+
+/* line 16, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+p {
+  font-family: 'Oswald'; }
+
+/* line 20, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+video {
+  width: 1280;
+  height: 720; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,23 @@
 @import 'normalize';
 @import 'mediaelementplayer';
+@import url('https://fonts.googleapis.com/css?family=Arvo|Oswald');
 
 $bg: antiquewhite;
 
 body {
     background: $bg;
+}
+
+h1 {
+    color: hsl(336, 44%, 65%);
+    font-family: 'Arvo';
+}
+
+p {
+    font-family: 'Oswald';
+}
+
+video {
+    width: 1280;
+    height: 720;
 }
