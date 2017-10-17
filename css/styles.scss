@@ -18,6 +18,20 @@ p {
 }
 
 video {
-    width: 1280;
-    height: 720;
+    width: 480px;
+    height: 270px;
+}
+
+/* Layout */
+.page {
+    display: flex;
+}
+
+header, 
+section, 
+main, 
+article,
+aside,
+footer {
+    flex: 1;
 }

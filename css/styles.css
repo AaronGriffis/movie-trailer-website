@@ -1110,7 +1110,21 @@ p {
 
 /* line 20, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
 video {
-  width: 1280;
-  height: 720; }
+  width: 480px;
+  height: 270px; }
+
+/* Layout */
+/* line 26, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+.page {
+  display: flex; }
+
+/* line 30, /Volumes/agriffis1/p1-movie-trailer/css/styles.scss */
+header,
+section,
+main,
+article,
+aside,
+footer {
+  flex: 1; }
 
 /*# sourceMappingURL=styles.css.map */
