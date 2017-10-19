@@ -1,0 +1,37 @@
+// Main Stylesheet
+// Color Palette
+$bg: antiquewhite;
+
+// Typography
+body {
+   background: $bg;
+}
+
+h1 {
+   color: hsl(336, 44%, 65%);
+   font-family: 'Arvo';
+}
+
+p {
+   font-family: 'Oswald';
+}
+
+.page {
+   display: flex;
+   flex-direction: column;
+}
+
+header,
+section,
+main,
+article,
+aside,
+footer {
+   flex: 1;
+}
+
+// Video Player Styling
+video {
+   max-width: 100%;
+   width: 100%;
+}
