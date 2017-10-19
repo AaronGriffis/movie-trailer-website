@@ -1,6 +1,7 @@
 // Flexbox Grid
 .page {
-  display: flex;
+   display: flex;
+   flex-direction: column;
 }
 
 header,
@@ -8,5 +9,5 @@ main,
 aside,
 article,
 footer {
-  flex: 1;
+   flex: 1;
 }

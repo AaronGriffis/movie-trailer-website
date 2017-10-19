@@ -5,6 +5,7 @@ $bg: antiquewhite;
 // Typography
 body {
    background: $bg;
+   margin: 0 auto;
 }
 
 h1 {
@@ -14,20 +15,6 @@ h1 {
 
 p {
    font-family: 'Oswald';
-}
-
-.page {
-   display: flex;
-   flex-direction: column;
-}
-
-header,
-section,
-main,
-article,
-aside,
-footer {
-   flex: 1;
 }
 
 // Video Player Styling
