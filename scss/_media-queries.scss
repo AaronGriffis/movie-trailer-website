@@ -1,50 +1,95 @@
-/* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) {
+/* Mobile: 320px = 20rem */
+@media screen and (min-width: 20rem) {
    // RWD Grid
    .page {
-      display: block;
+      display: flex;
    }
 
-   /* Diagnostic Styling. Delete When Done. */
-   body:before {
-      background: yellow;
-      content: "Mobile Size";
+   main, header {
+      padding: 1.5rem;
+   }
+
+   #cast .tag {
+      flex: 1 0 25%;
    }
 }
 
-/* Tablet:  768px = 160em */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 30rem) {
+   .rwd-line {
+      display: inline;
+   }
+}
+
+/* Tablet:  768px = 160rem */
+@media screen and (min-width: 48rem) {
    // RWD Grid
    main {
-      padding: 2em;
+      padding: 0 3rem;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      
+      article {
+         flex-direction: row;
+         font-size: 1.25em;
+
+         p:first-of-type {
+            margin-right: 2rem;
+         }
+      }
+   }
+   
+   header {
+      flex-direction: row;
+      padding: 3rem;
+
+      h1 {
+         padding-right: 3rem;
+      }
    }
 
-   main article,
-   main aside {
-      width: 50%;
-   }
-
-   /* Diagnostic Styling. Delete When Done. */
-   body:before {
-      background: yellow;
-      content: "Tablet Size";
+   #cast .tag {
+      flex: 1 0 14%;
    }
 }
 
-/* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) {
-   // Fixed width. Center Aligned. 
-   .page {
-      margin: 0 auto;
-      max-width: 75%;
-      width: 75%;
+/* Desktop: 1280px = 80rem */
+@media screen and (min-width: 80rem) {
+   
+   .videocontent {
+      padding: 3rem 0;
    }
 
-   /* Diagnostic Styling. Delete When Done. */
-   body:before {
-      background: yellow;
-      content: "Desktop Size";
+   header {
+      padding: 2rem 4rem;
+
+      ul {
+         font-size: 1.25em;
+      }
+   }
+
+   main {
+      flex-direction: row;
+      padding: 0 4rem;
+      
+      article {
+         font-size: 1.5em;
+         margin-right: 1.5rem;
+         flex-direction: column;
+         align-content: flex-start;
+
+         p {
+            flex: 0;
+         }
+      }
+
+      #cast {
+         margin-top: 1rem;
+      }
+   }
+}
+
+@media screen and (min-width: 120rem) {
+   main #cast .tag {
+      flex: 1 0 9%;
    }
 }

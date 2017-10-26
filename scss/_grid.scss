@@ -1,5 +1,5 @@
 // Flexbox Grid
-.page {
+.page, article {
    display: flex;
    flex-direction: column;
 }
@@ -8,6 +8,33 @@ header,
 main,
 aside,
 article,
-footer {
+footer, article>p {
    flex: 1;
+}
+
+main {
+   flex-wrap: wrap;
+}
+
+header {
+   justify-content: space-between;
+
+   h1 {
+      flex: 2;
+   }
+
+   ul {
+      flex: 1;
+   }
+}
+
+#cast {
+   flex: 2;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#cast .tag {
+   flex: 1 0 25%;
 }

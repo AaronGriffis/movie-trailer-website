@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <title>Web 2 Starter</title>
+   <title>The Grand Budapest Hotel</title>
 
    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -20,40 +20,77 @@
 
 <body class="page">
 
-   <!-- Header  -->
-   <header>
-      <h1>The Grand Budapest Hotel</h1>
-   </header>
+   <div id="center">
+      <p id="curved-trailer">MOVIE TRAILER</p>
+   </div>
 
    <!--  Trailer for Movie  -->
-   <section>
-      <video>
+   <section class="trailer">
+      <div class="videocontent">
+         <video width="100%" height="100%">
             <source src="video/trailer.mp4" type="video/mp4">
             <source src="video/trailer.webm" type="video/webm">
-        </video>
+         </video>
+      </div>
    </section>
+
+   <!-- Header  -->
+   <header>
+      <h1><span class="rwd-line">The Grand</span> <span class="rwd-line">Budapest Hotel</span></h1>
+      <ul>
+         <li>R</li>
+         <li>99 min</li>
+         <li>Adventure, Comedy, Drama</li>
+      </ul>
+   </header>
 
    <!--  Main Content  -->
    <main>
 
       <article>
          <p>The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.</p>
+         <p>The story involves the theft and recovery of a priceless Renaissance painting and the battle for an enormous family fortune &mdash; all against the back-drop of a suddenly and dramatically changing Continent.</p>
       </article>
 
-      <aside>
-         <p>Placeholder for additional info for movie</p>
-      </aside>
+      <div id="cast">
+         <div class="tag"><img src="img/cast/Ralph Fiennes.png"></div>
+         <div class="tag"><img src="img/cast/F. Murray Abraham.png"></div>
+         <div class="tag"><img src="img/cast/Mathieu Amalric.png"></div>
+         <div class="tag"><img src="img/cast/Adrien Brody.png"></div>
+         <div class="tag"><img src="img/cast/Willem Dafoe.png"></div>
+         <div class="tag"><img src="img/cast/Jeff Goldblum.png"></div>
+         <div class="tag"><img src="img/cast/Harvey Keitel.png"></div>
+         <div class="tag"><img src="img/cast/Jude Law.png"></div>
+         <div class="tag"><img src="img/cast/Bill Murray.png"></div>
+         <div class="tag"><img src="img/cast/Edward Norton.png"></div>
+         <div class="tag"><img src="img/cast/Saoirse Ronan.png"></div>
+         <div class="tag"><img src="img/cast/Jason Schwartzman.png"></div>
+         <div class="tag"><img src="img/cast/Lea Seydoux.png"></div>
+         <div class="tag"><img src="img/cast/Tilda Swinton.png"></div>
+         <div class="tag"><img src="img/cast/Tom Wilkinson.png"></div>
+         <div class="tag"><img src="img/cast/Owen Wilson.png"></div>
+         <div class="tag"><img src="img/cast/Mail.png" class="no-swivel"></div>
+         <div class="tag"><img src="img/cast/Tony Revolori.png"></div>
+      </div>
 
    </main>
 
    <!--  Footer  -->
    <footer>
-      <small>Copyright 2017</small>
+      <span>Aaron Griffis</span>
+      <a href="https://github.com/AaronGriffis" class="github-icon">
+         <img src="img/GitHub/GitHub-Mark-32px.png" alt="GitHub">
+      </a>
+      <span>2017</span>
+
+      <img src="img/footer.png" class="footer-img">
    </footer>
+
 
    <!-- Scripts -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="js/lettering.js"></script>
+   <script src="js/jquery.arctext.js"></script>
+   <script src="js/jquery.fittext.js"></script>
    <script src="js/mediaelementplayer.js"></script>
    <script src="js/scripts.js"></script>
 

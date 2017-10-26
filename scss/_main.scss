@@ -1,24 +1,176 @@
 // Main Stylesheet
 // Color Palette
-$bg: antiquewhite;
+$color-offwhite:  #f5f3e4;
+$color-yellow:    #c89c6b;
+$color-tan:       #e3ab94;
+$color-red:       #e31100;
+$color-dark-red:  #940c02;
+$color-brown:     #603a37;
+$color-black:     #120000;
 
-// Typography
-body {
-   background: $bg;
-   margin: 0 auto;
+
+html {
+   background-image: url("../img/grand_budest_hotel_header.jpg");
+   background-position: top center;
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-color: $color-offwhite;
 }
 
-h1 {
-   color: hsl(336, 44%, 65%);
-   font-family: 'Arvo';
-}
-
-p {
+.page {
+   background: $color-offwhite;
+   color: $color-brown;
+   margin: calc(95vw / 2.23 ) auto 0;
    font-family: 'Oswald';
 }
 
-// Video Player Styling
-video {
-   max-width: 100%;
+h1 {
+   font-family: 'Arvo';
+   margin: 0;
+}
+
+#center {
+   position: relative;
+   text-align: center;
+}
+
+#curved-trailer {
+   font-family: 'Bellefair';
+   font-weight: 400;
+   font-style: normal;
+   position: absolute;
+   font-size: 2.5em;
+   color: $color-yellow;
+   letter-spacing: 0.5em;
+   top: -12vw;
    width: 100%;
 }
+
+// Video Player Styling
+.trailer {
+   box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 
+               0 -6px 6px rgba(0,0,0,0.23);
+   background: $color-brown;
+}
+
+.videocontent {
+   width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+}
+
+video {
+   width: 100%;
+   height: 100%;
+}
+
+
+header {
+   background: $color-tan;
+   padding: 1rem;
+}
+
+header h1, ul {
+   display: inline-block;
+   margin: 0;
+}
+
+header ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 1rem;
+}
+
+header li {
+   display: inline-block;
+   padding-right: 1rem;
+   margin-right: 1rem;
+
+   &:not(:last-child) {
+      border-right: 1px solid $color-brown;
+   }
+}
+
+//Main Styling
+main {
+   padding: 0 1rem;
+}
+
+main article {
+   color: $color-dark-red;
+}
+
+main article p {
+   margin: 1em 0;
+}
+
+#cast {
+   background: $color-black;
+   border: calc(5vw/3) solid $color-red;
+   clear: both;
+
+   .tag {
+      border: calc(2vw/5) solid $color-dark-red;
+      text-align: center;
+   }
+
+   img {
+      width: 100%;
+   }
+}
+
+#cast img:not(.no-swivel) {
+   transform-origin: 50% 1rem;
+   transition: transform .4s;
+
+   &:hover {
+      animation: swivel .5s;
+      animation-timing-function: ease-in-out;
+   }
+}
+
+//Footer Styling
+footer {
+   padding-top: 5rem;
+   text-align: center;
+}
+
+.footer-img {
+   width: 100%;
+   margin-top: -4vw;
+   margin-bottom: -3px;
+   pointer-events: none;
+}
+
+.github-icon {
+   display: inline-block;
+}
+
+.github-icon>img {
+   height: 24px;
+   vertical-align: text-bottom;
+   margin: 0 5px;
+}
+
+.rwd-line {
+   display: block;
+}
+
+@keyframes swivel {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   25% {
+      transform: rotate(-5deg);
+   }
+
+   75% {
+      transform: rotate(5deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+ }
