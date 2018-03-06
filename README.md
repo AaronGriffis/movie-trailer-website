@@ -1,18 +1,4 @@
 # The Grand Budapest Hotel
+A movie trailer website for The Grand Budapest Hotel. It served as a practice project for building a fully responsive, mobile first website.
 
-## Content Proiority Outline
-1. Title
-2. Trailer
-3. Movie Info
-   * Rating
-   * Runtime
-   * Genres
-   * Description
-   * Actors
-4. Imagery
-
-## Art Direction
-* Whimsical, adventurous, colorful, bright and cheery, fast-paced, humerous, scenic, romantic, fun
-
-## Visual Design
-* Collage from art direction
+View live website [here](http://www.aarongriffis.com/movie-trailer-website/), or read more about it [here](http://www.aarongriffis.com/work/movie-trailer-website/).
